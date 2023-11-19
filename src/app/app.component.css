@@ -17,6 +17,10 @@
     blink-caret .5s step-end infinite;
 }
 
+.ml-2{
+  margin-left: 10px;
+}
+
 /* The typing effect */
 @keyframes typing {
   from { width: 0 }
