@@ -930,6 +930,9 @@ a:hover {
   width: 60px;
   line-height: 1.5;
   box-shadow: 0 0 0 10px #cde1f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .counter-num .counter {

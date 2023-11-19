@@ -107,7 +107,7 @@
                     <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
                       aria-valuemax="100"></div>
                   </div>
-                  <span>Dot net</span> <span class="pull-right ml-2">80%</span>
+                  <span>.Net</span> <span class="pull-right ml-2">80%</span>
                   <div class="progress">
                     <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
                       aria-valuemax="100"></div>
@@ -212,12 +212,12 @@
             <div class="service-content">
               <h2 class="s-title">Angular Frontend Project</h2>
               <p class="s-description text-center">(Angular, Bootstrap, Animate.css, Jquery)</p>
-              <p class="s-description text-center">
+              <app-expandable-div [initialHeight]="'120px'" [text]="'
                 This project was developed as a demo for customer for front end application. 
                 The project consists of multiple UIs developed as the modification as per users taste.
                 The project was built on angular and external libraries like bootstrap.
-              </p>
-              <a class="text-primary" href="https://github.com/unknownshack/RKInternWebsite">Angular Frontend Project Github Link</a>
+                '"></app-expandable-div>
+                <a class="text-primary" href="https://github.com/unknownshack/RKInternWebsite">Angular Frontend Project Github Link</a>
             </div>
           </div>
         </div>
@@ -229,12 +229,29 @@
             <div class="service-content">
               <h2 class="s-title">MEAN Stack Template</h2>
               <p class="s-description text-center">(Angular, Nodejs, Express, MongoDB)</p>
-              <p class="s-description text-center">
-                This project sets up the template for MEAN stack project. 
-                The project has been structured such that when the front end project is developed and build, the files are used by the backend project.
-                The express and nodejs defined the routes for the both frontend UIs and banckend APIs.
-              </p>
+              <app-expandable-div [initialHeight]="'120px'" [text]="'This project sets up the template for MEAN stack project. 
+              The project has been structured such that when the front end project is developed and build, the files are used by the backend project.
+              The express and nodejs defined the routes for the both frontend UIs and banckend APIs.'"></app-expandable-div>
+
               <a class="text-primary" href="https://github.com/unknownshack/mean-stack-template">MEAN Stack Template Github Link</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="service-box">
+            <div class="service-ico">
+              <span class="ico-circle"><i class="bi bi-calendar4-week"></i></span>
+            </div>
+            <div class="service-content">
+              <h2 class="s-title">Quiz</h2>
+              <p class="s-description text-center">(MongoDB, Express, React, Nodejs)</p>
+              <app-expandable-div [initialHeight]="'120px'" [text]="'
+                This project is a quiz app that was requested by client. The application consist of sign in feature that
+                requires email and mobile to login. After the login, the user is redirected to  quiz questions. Based on the answer
+                to the quiz, the user is credited with points.
+                '"></app-expandable-div>
+              <a class="text-primary" href="https://github.com/unknownshack/quiz-app">Github link for QUIZ project</a>
+
             </div>
           </div>
         </div>
@@ -246,11 +263,11 @@
             <div class="service-content">
               <h2 class="s-title">.Net API for Android Application</h2>
               <p class="s-description text-center">(C#, .NET, Entity Core Framework)</p>
-              <p class="s-description text-center">
+              <app-expandable-div [initialHeight]="'96px'" [text]="'
                 This project developed .Net is backend project developed to provide APIs for the android application.
                 The project used swagger to load all the APIs for information.
-              </p>
-              <a class="text-primary" href="https://github.com/unknownshack/OnlinePlatformApi">Github link for .Net API project</a>
+                '"></app-expandable-div>
+                <a class="text-primary" href="https://github.com/unknownshack/OnlinePlatformApi">Github link for .Net API project</a>
             </div>
           </div>
         </div>
@@ -261,13 +278,18 @@
             </div>
             <div class="service-content">
               <h2 class="s-title">File Sync React Project</h2>
-              <p class="s-description text-center">(Reactjs, nodejs, express, sql server)</p>
-              <p class="s-description text-center">
+              <p class="s-description text-center">(Reactjs, nodejs, express, sql server, .Net background service)</p>
+              <app-expandable-div [initialHeight]="'96px'" [text]="'
                 This project was developed such that file would be synced with database values inserted through the UI.
                 I needed to update the hosts file for local dns resolution. So from the UI urlname and ip was entered which
                 would be inserted into database and synced with hosts file.
-              </p>
+
+                Alternative project developed before was done in .Net as background service. The service would sync host file
+                with file that is easily accessible to user. For example: text file in the desktop.
+              '"></app-expandable-div>
               <a href="https://github.com/unknownshack/FileSync" class="text-primary">Link to React FileSync Project</a>
+              <br/>
+              <a href="https://github.com/RohitY2J/HostFileUpdate" class="text-primary">Link to .Net FileSync Project</a>
             </div>
           </div>
         </div>
@@ -279,28 +301,13 @@
             <div class="service-content">
               <h2 class="s-title">HelpingMinds</h2>
               <p class="s-description text-center">(Kotlin, Android Studio, .Net, EntityCoreFramework, Sql Server)</p>
-              <p class="s-description text-center">
+              <app-expandable-div [initialHeight]="'96px'" [text]="'
                 This project was developed for the organization helpingminds based on Australia.
                 The main purpose of this application was to help users to organize their events related to specified organization.
                 The application consisted of feature like login, signup, creating event, setting timer for event, responding to event, and so on.
-              </p>
+                '"></app-expandable-div>
               <a href="https://github.com/unknownshack/HelpingMinds" class="text-primary">HelpingMinds Mobile App Link</a><br/>
               <a href="https://github.com/unknownshack/HelpingMindsAPI" class="text-primary">HelpingMinds API Link</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="service-box">
-            <div class="service-ico">
-              <span class="ico-circle"><i class="bi bi-calendar4-week"></i></span>
-            </div>
-            <div class="service-content">
-              <h2 class="s-title">Marketing Services</h2>
-              <p class="s-description text-center">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
-                provident vitae! Magni
-                tempora perferendis eum non provident.
-              </p>
             </div>
           </div>
         </div>
@@ -313,51 +320,39 @@
     <div class="overlay-mf"></div>
     <div class="container position-relative">
       <div class="row">
-        <div class="col-sm-3 col-lg-3">
+        <div class="col-sm-4 col-lg-4">
           <div class="counter-box counter-box pt-4 pt-md-0">
             <div class="counter-ico">
               <span class="ico-circle"><i class="bi bi-check"></i></span>
             </div>
             <div class="counter-num">
               <p data-purecounter-start="0" data-purecounter-end="450" data-purecounter-duration="1"
-                class="counter purecounter"></p>
+                class="counter purecounter">4</p>
               <span class="counter-text">WORKS COMPLETED</span>
             </div>
           </div>
         </div>
-        <div class="col-sm-3 col-lg-3">
+        <div class="col-sm-4 col-lg-4">
           <div class="counter-box pt-4 pt-md-0">
             <div class="counter-ico">
               <span class="ico-circle"><i class="bi bi-journal-richtext"></i></span>
             </div>
             <div class="counter-num">
               <p data-purecounter-start="0" data-purecounter-end="25" data-purecounter-duration="1"
-                class="counter purecounter"></p>
+                class="counter purecounter">2</p>
               <span class="counter-text">YEARS OF EXPERIENCE</span>
             </div>
           </div>
         </div>
-        <div class="col-sm-3 col-lg-3">
+        <div class="col-sm-4 col-lg-4">
           <div class="counter-box pt-4 pt-md-0">
             <div class="counter-ico">
               <span class="ico-circle"><i class="bi bi-people"></i></span>
             </div>
             <div class="counter-num">
               <p data-purecounter-start="0" data-purecounter-end="550" data-purecounter-duration="1"
-                class="counter purecounter"></p>
+                class="counter purecounter">4</p>
               <span class="counter-text">TOTAL CLIENTS</span>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-3 col-lg-3">
-          <div class="counter-box pt-4 pt-md-0">
-            <div class="counter-ico">
-              <span class="ico-circle"><i class="bi bi-award"></i></span>
-            </div>
-            <div class="counter-num">
-              <p data-purecounter-start="0" data-purecounter-end="48" data-purecounter-duration="1"
-                class="counter purecounter"></p>
-              <span class="counter-text">AWARD WON</span>
             </div>
           </div>
         </div>
@@ -366,7 +361,7 @@
   </div><!-- End Counter Section -->
 
   <!-- ======= Portfolio Section ======= -->
-  <section id="work" class="portfolio-mf sect-pt4 route">
+  <!-- <section id="work" class="portfolio-mf sect-pt4 route">
     <div class="container">
       <div class="row">
         <div class="col-sm-12">
@@ -529,7 +524,8 @@
 
       </div>
     </div>
-  </section><!-- End Portfolio Section -->
+  </section> -->
+  <!-- End Portfolio Section -->
 
   <!-- ======= Testimonials Section ======= -->
   <div class="testimonials paralax-mf bg-image" style="background-image: url(assets/img/overlay-bg.jpg)">
@@ -550,14 +546,13 @@
                   </div>
                   <div class="content-test">
                     <p class="description lead">
-                      Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Lorem ipsum dolor sit amet,
-                      consectetur adipiscing elit.
+                      I believe there should be balance between process and target to get satisfied outcome.
                     </p>
                   </div>
                 </div>
               </div><!-- End testimonial item -->
 
-              <div class="swiper-slide">
+              <!-- <div class="swiper-slide">
                 <div class="testimonial-box">
                   <div class="author-test">
                     <img src="assets/img/testimonial-4.jpg" alt="" class="rounded-circle b-shadow-a">
@@ -570,7 +565,7 @@
                     </p>
                   </div>
                 </div>
-              </div><!-- End testimonial item -->
+              </div> -->
             </div>
             <div class="swiper-pagination"></div>
           </div>

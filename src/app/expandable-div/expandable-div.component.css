@@ -1,0 +1,14 @@
+/* expandable-div.component.css */
+.expandable-div {
+    overflow: hidden;
+    transition: expanded 0.3s ease; /* Add a smooth transition effect */
+  }
+  
+.expanded {
+    max-height: none; /* Allow the div to expand to fit its content */
+}
+
+.clickable-paragraph{
+    cursor: pointer;
+}
+  
