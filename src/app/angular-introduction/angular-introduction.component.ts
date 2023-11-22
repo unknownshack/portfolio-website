@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MarkdownService } from '../markdown.service';
+import { ActivatedRoute, ParamMap } from '@angular/router'
 
 @Component({
   selector: 'app-angular-introduction',
@@ -8,13 +9,15 @@ import { MarkdownService } from '../markdown.service';
 })
 export class AngularIntroductionComponent {
   markdownContent: string = "";
+  markdownPath = '../../assets/markdown/';
+  markdownFileUrl = '../../assets/markdown/Angular Navigation and Routing.md';
 
-  constructor(private markdownService: MarkdownService) {}
+  constructor(private markdownService: MarkdownService, private route: ActivatedRoute) {}
 
   ngOnInit() {
-    const markdownFileUrl = '../../assets/markdown/Angular Navigation and Routing.md';
-
-    this.markdownService.getMarkdownContent(markdownFileUrl)
+    let fileName = this.route.snapshot.queryParamMap.get('file');
+    this.markdownFileUrl = this.markdownPath + fileName;
+    this.markdownService.getMarkdownContent(this.markdownFileUrl)
       .subscribe((content: string) => {
         this.markdownContent = this.markdownService.parseMarkdown(content);
       });
