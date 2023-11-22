@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { ExpandableDivComponent } from './expandable-div/expandable-div.component';
 import { ProfileComponent } from './profile/profile.component';
 import { AngularIntroductionComponent } from './angular-introduction/angular-introduction.component';
+import { MarkdownService } from './markdown.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -16,9 +18,10 @@ import { AngularIntroductionComponent } from './angular-introduction/angular-int
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [MarkdownService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

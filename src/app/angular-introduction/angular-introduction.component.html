@@ -1,21 +1,62 @@
-<header>
-    <h1>Introduction to Angular</h1>
-</header>
+<div class="wrapper">
+    <div class="section">
+        <!-- <div class="top_navbar">
+            <div class="hamburger">
+                <a href="#">
+                    <i class="fas fa-bars"></i>
+                </a>
+            </div>
+        </div> -->
+        <div class="container">
+            <article [innerHTML]="markdownContent"></article>
+        </div>
+    </div>
+    <div class="sidebar" style="padding-top: 30px;">
+        <div class="profile">
+            <h3 style="margin-bottom: 50px;"><strong>Rahul's Blog</strong></h3>
+            <img src="../../assets/img/rahul_passport_size.jpg" alt="profile_picture">
+            <h3>Rahul Kawari</h3>
+            <p>Developer</p>
+            <div>
+                <i>
 
-<main>
-    <article>
-        <h2>What is Angular?</h2>
-        <p>Angular is a popular open-source framework for building web applications. Developed and maintained by Google, Angular provides a comprehensive set of tools and features that simplify the development process.</p>
+                </i>
+            </div>
+            <hr style="color: white; height: 1px; margin-top:25px" />
+            <div style="color: white; margin-top: 25px; text-align: left; margin-left: 50px;">
+                <a href="/" style="color: white;">
 
-        <h2>Key Features of Angular</h2>
-        <ul>
-            <li><strong>Declarative Templates:</strong> Angular uses HTML to define the UI of an application in a declarative manner.</li>
-            <li><strong>Two-Way Data Binding:</strong> Angular's two-way data binding ensures that changes in the UI automatically update the application state, and vice versa.</li>
-            <li><strong>Modularity:</strong> Angular promotes the development of modular applications, making it easier to manage and scale large codebases.</li>
-            <li><strong>Dependency Injection:</strong> Angular's dependency injection system helps organize and manage the components of an application.</li>
-        </ul>
+                    <div class="m-2">
+                        <i class="bi bi-house" style="font-size: 20px; padding-right: 10px;"></i>
+                        <span style="font-size: 18px;">Home</span>
+                    </div>
+                </a>
+                <a href="/#blog" style="color: white;">
 
-        <h2>Getting Started with Angular</h2>
-        <p>If you're new to Angular, the official <a href="https://angular.io/">Angular documentation</a> is a great resource to get started. It provides step-by-step guides, tutorials, and examples to help you learn and master Angular development.</p>
-    </article>
-</main>
+                    <div class="m-2">
+                        <i class="bi bi-substack" style="font-size: 15px; padding-right: 10px;"></i>
+                        <span style="font-size: 18px;">Blog Post</span>
+                    </div>
+                </a>
+                <a href="/#about" style="color: white;">
+                    <div class="m-2">
+                        <i class="bi bi-person" style="font-size: 20px; padding-right: 10px;"></i>
+                        <span style="font-size: 18px;">About Me</span>
+                    </div>
+                </a>
+
+            </div>
+            <a href="/#contact">
+                <button class="m-2" style="    padding: 10px;
+                    color: white;
+                    background: inherit;
+                    border: 1px solid white;
+                    border-radius: 5px;">
+                    Get in Touch
+                </button>
+            </a>
+        </div>
+
+    </div>
+
+</div>
