@@ -8,6 +8,7 @@ import { ProfileComponent } from './profile/profile.component';
 import { AngularIntroductionComponent } from './angular-introduction/angular-introduction.component';
 import { MarkdownService } from './markdown.service';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { HttpClientModule } from '@angular/common/http';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [MarkdownService],
   bootstrap: [AppComponent]
