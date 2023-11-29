@@ -118,20 +118,18 @@ With these steps, you can use multiple router outlets to render different parts 
 
 There are several ways:
 
-![Untitled](Angular%20Navigation%20and%20Routing%20401909fea30246cd8a4678aadb69c01d/Untitled.png)
-
 ```jsx
 //Accessing route in navigated page.
 import { ActivatedRoute, ParamMap } from '@angular/router'
 constructor(private route: ActivatedRoute) {}
 ```
 
-![Untitled](Angular%20Navigation%20and%20Routing%20401909fea30246cd8a4678aadb69c01d/Untitled%201.png)
+![Untitled](/assets/img/angular_required_parameter.png)
 
-![Untitled](Angular%20Navigation%20and%20Routing%20401909fea30246cd8a4678aadb69c01d/Untitled%202.png)
+![Untitled](/assets/img/angular_optional_parameter.png)
+
+![Untitled](/assets/img/angular_query_parameter.png)
 
 4) You can use a service to pass data from one component to another without using route parameters at all.
 
 For an example see: [https://blogs.msmvps.com/deborahk/build-a-simple-angular-service-to-share-data/](https://blogs.msmvps.com/deborahk/build-a-simple-angular-service-to-share-data/)
-
-I have a plunker of this here: [https://plnkr.co/edit/KT4JLmpcwGBM2xdZQeI9?p=preview](https://plnkr.co/edit/KT4JLmpcwGBM2xdZQeI9?p=preview)
